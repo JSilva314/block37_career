@@ -42,4 +42,7 @@ model Review {
   user      User     @relation(fields: [userId], references: [id])
   userId    Int
   createdAt DateTime @default(now())
+
+  // Define a unique constraint across carId and userId
+  @@unique([carId, userId])
 }

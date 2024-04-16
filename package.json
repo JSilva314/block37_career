@@ -7,7 +7,9 @@
     "dev": "nodemon src/server/main.js -w src/server",
     "start": "NODE_ENV=production node src/server/main.js",
     "build": "vite build",
-    "seed": "npx prisma migrate reset && node seed.js"
+    "seed": "npx prisma migrate reset && node seed.js",
+    "server": "node src/server/main.js",
+    "server:dev": "nodemon src/server/main.js -w src/server"
   },
   "dependencies": {
     "@prisma/client": "^5.12.1",
